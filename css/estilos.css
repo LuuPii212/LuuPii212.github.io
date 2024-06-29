@@ -27,6 +27,8 @@ body {
 .dark-mode {background: #666685 ; color: #d4d3d3;}
 .dark-mode header {background: #404040; color: #d4d3d3;}
 .dark-mode article {border: 1px solid #787878; background: #303030; color: #d4d3d3;}
+.dark-mode footer{background: #404040; color: #d4d3d3;}
+.dark-mode main {background: #5e5d5d00;}
 .dark-mode a, .dark-mode p,.dark-mode h2, .dark-mode #logo {color: #d4d3d3;}
 
 
