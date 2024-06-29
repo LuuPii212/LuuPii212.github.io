@@ -24,7 +24,7 @@ body {
 .dark-btn {height: 20px; width: 20px; background: url(../img/icons/moon.svg) no-repeat center; cursor: pointer;}
 .dark-btn-active {background: url(../img/icons/sun.svg) no-repeat center;} 
 
-.dark-mode {background:rgba(0, 0, 0, 0.9)  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAB9JREFUGFdjZEAFxoxIfGMGBoazMAEwByQJEoBzQAIAT64DOBO4uTsAAAAASUVORK5CYII=); color: #d4d3d3;}
+.dark-mode {background: #666685 ; color: #d4d3d3;}
 .dark-mode header {background: #404040; color: #d4d3d3;}
 .dark-mode article {border: 1px solid #787878; background: #303030; color: #d4d3d3;}
 .dark-mode a, .dark-mode p,.dark-mode h2, .dark-mode #logo {color: #d4d3d3;}
