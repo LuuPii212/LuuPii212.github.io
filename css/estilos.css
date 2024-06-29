@@ -119,8 +119,8 @@ article {
 footer {background: #53537a; min-height: 96px; margin: 16px 0 0 0;}
 
 /*  Botonería  */
-.btn {background: #53537a; color:  #fff; padding: .9rem 1.61rem; border-radius: 2rem; cursor: pointer; letter-spacing: .08rem; margin: 1.61rem 1rem 1rem 0; transition: all .3s; border: none; font: .86rem "REM"; font-weight: 600; }
-.btn:hover {background: #251937; color: #fff}
+.btn {background: #e290bd41; color:  #e290bd41; padding: .9rem 1.61rem; border-radius: 2rem; cursor: pointer; letter-spacing: .08rem; margin: 1.61rem 1rem 1rem 0; transition: all .3s; border: none; font: .86rem "REM"; font-weight: 600; }
+.btn:hover {background: #fff; color: #fff}
 .btn:active {box-shadow: 0 0 0 9px rgba(0, 0, 0, .04), 0 0 0 9px rgba(0, 0, 0, .04), 0 0 0 9px rgba(0, 0, 0, .04), 0 0 0 9px rgba(0, 0, 0, .04);}
 .btn-blanco {background: #fff; color: #392655} .btn-blanco:hover {background: #1c1927; color: #fff}
 
