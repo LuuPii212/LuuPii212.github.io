@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" id="logo"><img src="./img/icons/pocion-de-amor (1).png" alt="" height="45px" width="45px"></a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="bebidas.html" >Bebidas</a></li>
+                    <li><a href="postres.html">Postres</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+    <main>
+        <section id="hero">
+
+            <img src="img/Fall.jpeg" alt="">
+
+                <div class="hero-fill">
+                    <div class="hero-text">
+                        <h1>Lover's House </h1>
+                        <h2>Contactanos</h2>
+                        <p>Instagram: lovershouse.cafe</p>
+                        <p>Twitter: lovershouse.cafe</p>
+                        <p>Gmail: lovershouse.cafe@gmail.com</p>
+                        <p>Telefono: 0080-0321 </p>
+                        <a href="#"><button class="btn btn-blanco">Dirección</button></a>
+                    </div>
+                </div>
+        </section>
+        <section class="container">
+            <article>
+                <h2>Ubicacion:</h2>
+                <p>Ramón Masini 3349-3297</p>
+                <img src="img/cafeAuera.jpeg" alt="" width="600" height="700px">
+            </article>
+        </section>
+        <section class="colums container">
+            <article>
+                <img src="img/cafeSillas.jpeg" alt="" width="400px">
+            </article>
+            <article>
+                <img src="img/cafeEsq.jpeg" alt="" width="400px" >
+            </article>
+        </section>
+        <section class="colums container">
+            <article>
+
+
+
+            </article>
+        
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        // Menú Lateral:
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+        // Cambiador de Modo Claro a Oscuro:
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+    </script>
+    
+</body>
+</html>

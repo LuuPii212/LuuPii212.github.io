@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio 1</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="#" id="logo"><img src="./img/icons/pocion-de-amor (1).png" alt="" height="45px" width="45px"></a>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="postres.html">Postres</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><div class="dark-btn"></div></li>
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+    <main>
+        <section id="hero">
+
+            <img src="img/merienda.jpg" alt="">
+            <!-- <video src="video/vid-1.mp4" autoplay muted loop></video> -->
+
+                <div class="hero-fill">
+                    <div class="hero-text">
+                        <h1>Lover's House </h1>
+                        <p>Lover's House Café: Donde los Swifities se Encuentran </p>
+                        <a href="#"><button class="btn btn-blanco">Más info</button></a>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="container">
+
+            <article>
+                <h2>Sobre nosotros:</h2>
+                <p>Bienvenidos a Lovers House Café, un santuario rosado diseñado especialmente para los fans apasionados de Taylor Swift. Sumérgete en un ambiente acogedor y lleno de amor, donde cada detalle está inspirado en la música y la estética de nuestra querida artista</p>
+                <hr>
+                <p>Al entrar a Lovers House, serás recibido por una decoración encantadora en tonos rosados suaves, que reflejan la dulzura y el romanticismo de las canciones de Taylor Swift. Las paredes están adornadas con letras de canciones icónicas y fotos inspiradoras de momentos destacados de su carrera, creando un ambiente acogedor y nostálgico para los verdaderos fans.</p>
+            </article>
+            
+        </section>
+
+        <section class="colums container">
+            <article>
+                <h2>Bebidas Calientes:</h2>
+                <p>Descubre nuestras 9 especialidades en bebidas calientes, cada una nombrada en honor a una canción emblemática de Taylor Swift. Desde el "Love Story Latte" hasta el "Enchanted Espresso", cada sorbo te llevará a un viaje musical mientras disfrutas de la calidez reconfortante de tu bebida favorita.</p>
+            </article>
+            <article>
+                <h2>Bebidas Frias:</h2>
+                <p>Refresca tus sentidos con nuestras 6 refrescantes bebidas frías, entre las cuales destaca nuestro famoso "Latte Frío", una especialidad de la casa que combina la suavidad del café con un toque refrescante. Perfecto para los días soleados o para aquellos momentos en los que necesitas un descanso revitalizante.</p>
+            </article>
+          
+        </section>
+
+        <section class="colums container">
+            <article>
+                <h2>Postres Dulces:</h2>
+                <p>Nuestra selección de 12 postres dulces te tentará con delicias como la irresistible "Carrot Cake", un clásico reconfortante que combina capas de bizcocho de zanahoria y crema de queso. Cada postre está meticulosamente preparado para satisfacer tus antojos más dulces mientras te sumerges en el mundo musical de Taylor Swift.</p>
+            </article>
+            <article>
+                <h2>Postres Salados:</h2>
+                <p>Para aquellos que prefieren algo salado, ofrecemos 6 opciones de postres salados que complementan perfectamente nuestro menú. Desde nuestros deliciosos Tostones Rellenos hasta exquisitos scones salados, cada opción está diseñada para satisfacer tu paladar.</p>
+            </article>
+          
+        </section>
+
+        <section class="container">
+
+            <article>
+                <h2>Especialidades:</h2>
+                <p>No te pierdas nuestras especialidades de la casa: el refrescante "Latte Frío" y la clásica "Carrot Cake". Ambos son favoritos entre los clientes de Lovers House por su sabor excepcional y la calidad de sus ingredientes, que reflejan la pasión y el compromiso de nuestro equipo por ofrecer lo mejor a nuestros invitados.</p>
+            </article>
+            
+        </section>
+        <section class="container">
+            <article>
+                <p>En Lovers House Café, no solo celebramos la música de Taylor Swift, sino que también creamos un espacio donde los Swifities pueden reunirse, compartir su amor por la música y crear recuerdos especiales. Únete a nosotros y vive una experiencia única en el corazón de la cultura Swiftie.</p>
+            </article>
+        </section>
+        <section class="container">
+            <article>
+                <img src="img/icons/iconsTS/lover.png" alt="" width="200px" >
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer></footer>
+    
+    <script>
+        // Menú Lateral:
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+        // Cambiador de Modo Claro a Oscuro:
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+    </script>
+</body>
+</html>
